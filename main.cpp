@@ -36,6 +36,7 @@ int main() {
     cout << "|Welcome to the Casino Number Guessing Game|"<< endl;
     cout << "--------------------------------------------"<< endl;
     int money = 10000;
+    srand(time(NULL));
     
     cout << "Initializing 10000 currency"<< endl;
     cout << "welcome to the table"<< endl;
@@ -127,8 +128,8 @@ int main() {
     }
     if (money<0) {
         cout << "\033[41m";
-        cout << "You lost " << money << endl;
-        cout << "\033[0m";
+        cout << "You lost " << money<< "\033[0m" << endl;
+        
     }
     else {
     cout << "Congratulations!, You won " << money << endl;
