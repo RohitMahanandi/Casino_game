@@ -2,7 +2,7 @@
 using namespace std;
 
 
-void printcard(int value) 
+void print_card(int value) 
 {
     cout << "--------------"<< endl;
     cout << "|            |"<< endl;
@@ -83,10 +83,10 @@ int main() {
         cout << "showing only the cards that are more close to 9" << endl;
         cout << "\033[4mYour Card"<< endl;
         cout << "\033[0m";
-        printcard(mine);
+        print_card(mine);
         cout << "\033[4mComputer Card" << endl;
         cout << "\033[0m";
-        printcard(computer);
+        print_card(computer);
 
         if(computer == mine) {
             cout << "Its Tie"<< endl;
